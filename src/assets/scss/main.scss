@@ -1,1 +1,16 @@
 @import 'reset';
+@import "../../pages/components/header/scss/header";
+
+
+@font-face {
+  font-family: "TTNorms";
+  src: url("../../../../src/assets/fonts/TTNorms-Bold.ttf") format("ttf"),
+  url("../../../../src/assets/fonts/TTNorms-Bold.woff") format("woff");
+  src: url("../../../../src/assets/fonts/TTNorms-Medium.ttf") format("ttf"),
+  url("../../../../src/assets/fonts/TTNorms-Medium.woff") format("woff");
+  src: url("../../../../src/assets/fonts/TTNorms-Regular.ttf") format("ttf"),
+  url("../../../../src/assets/fonts/TTNorms-Regular.woff") format("woff");
+}
+
+
+
