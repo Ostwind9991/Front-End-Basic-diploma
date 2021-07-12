@@ -1,18 +1,39 @@
-@import "../../../../assets/scss/reset";
 @import "../../../../assets/scss/common/mixins.scss";
 @import "../../../../assets/scss/common/variables.scss";
 
 .header {
+  display: flex;
+  justify-content: space-between;
+
   &__logo {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__wrapperLanguage {
+    display: flex;
 
   }
 
   &__language {
 
   }
+  &__language li {
+    display: inline-block;
+
+  }
 
   &__contact {
 
+  }
+
+  &__contact li {
+    display: inline-block;
   }
 
   &__menu {
@@ -21,6 +42,10 @@
     cursor: pointer;
   }
 
+  &__menu li {
+    display: inline-block;
+
+  }
   &__menu li:hover {
     color:$Accent;
 
