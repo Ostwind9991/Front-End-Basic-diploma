@@ -40,4 +40,4 @@ gulp.task("watch", function(done) {
     gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('watch'));
+gulp.task('default', gulp.series('copy', 'sass', 'fileinclude', 'watch'));

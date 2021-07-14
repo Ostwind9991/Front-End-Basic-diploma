@@ -1,9 +1,11 @@
 @import 'reset';
 @import "./common/fonts.scss";
-@import "../../pages/components/header/scss/header";
+@import "components/header";
 @import "../../pages/homepage/scss/homepage";
 
-
+body {
+  background-color: blue!important;
+}
 
 
 
