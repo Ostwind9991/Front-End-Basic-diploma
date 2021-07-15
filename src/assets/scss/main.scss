@@ -4,8 +4,12 @@
 @import "../../pages/homepage/scss/homepage";
 
 body {
-  background-color: blue!important;
+  background-color: #6464bd !important;
 }
 
+.homepageHeaderWrapper {
+  max-width: 1440px;
+  padding: 50px;
+}
 
 

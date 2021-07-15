@@ -4,3 +4,11 @@
   font-size: 18px;
   line-height: 21px;
 }
+
+@mixin textMenu {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+}

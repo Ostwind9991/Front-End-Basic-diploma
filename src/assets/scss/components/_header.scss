@@ -13,28 +13,55 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: flex-end;
   }
 
   &__wrapperLanguage {
     display: flex;
+    @include textMenu;
+    color: $White;
+    align-items: center;
 
   }
 
   &__language {
 
   }
+
   &__language li {
     display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+  }
 
+  &__language li:hover {
+    background-color: $Accent;
+    border-radius: 8px;
   }
 
   &__contact {
-
   }
 
   &__contact li {
     display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
   }
+
+  &__contact li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #E6E6F0;
+    vertical-align: center;
+    position: relative;
+    bottom: 2px;
+    margin-right: 10px;
+  }
+
 
   &__menu {
     @include titleBlue;
@@ -44,10 +71,12 @@
 
   &__menu li {
     display: inline-block;
+    margin-left: 15px;
 
   }
+
   &__menu li:hover {
-    color:$Accent;
+    color: $Accent;
 
   }
 }
