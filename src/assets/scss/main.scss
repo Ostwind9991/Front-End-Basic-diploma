@@ -1,15 +1,13 @@
 @import 'reset';
 @import "./common/fonts.scss";
 @import "components/header";
-@import "../../pages/homepage/scss/homepage";
+@import "components/homepage/homepage";
 
-body {
-  background-color: #6464bd !important;
-}
 
 .homepageHeaderWrapper {
   max-width: 1440px;
   padding: 50px;
+  margin: auto;
 }
 
 

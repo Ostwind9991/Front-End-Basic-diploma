@@ -20,8 +20,6 @@
     display: flex;
     @include textMenu;
     color: $White;
-    align-items: center;
-
   }
 
   &__language {
