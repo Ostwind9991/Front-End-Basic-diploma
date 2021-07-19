@@ -20,34 +20,35 @@
     display: flex;
     @include textMenu;
     color: $White;
+    align-items: center;
   }
 
-  &__language {
-
+  &__language  {
+  display: flex;
   }
 
-  &__language li {
-    display: inline-block;
+  &__language span {
     margin-left: 10px;
     cursor: pointer;
     padding: 5px;
   }
 
-  &__language li:hover {
+  &__language span:hover {
     background-color: $Accent;
     border-radius: 8px;
   }
 
   &__contact {
+    display: flex;
+    align-items: center;
   }
 
-  &__contact li {
-    display: inline-block;
+  &__contact p, a {
     margin-left: 20px;
     cursor: pointer;
   }
 
-  &__contact li::before {
+  &__contact p::before, a::before {
     content: "";
     display: inline-block;
     width: 6px;
@@ -58,6 +59,10 @@
     position: relative;
     bottom: 2px;
     margin-right: 10px;
+  }
+
+  &__contact a::before {
+    bottom: 7px;
   }
 
 

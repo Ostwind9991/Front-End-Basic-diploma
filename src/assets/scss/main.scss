@@ -3,10 +3,13 @@
 @import "components/header";
 @import "components/homepage/homepage";
 
-
+.homepageBanerSectionWrapper {
+  background: url("../icons/PatternSplash.png") no-repeat center/cover;
+  height: 100vh;
+}
 .homepageHeaderWrapper {
   max-width: 1440px;
-  padding: 50px;
+  padding: 50px 60px 0 60px;
   margin: auto;
 }
 
