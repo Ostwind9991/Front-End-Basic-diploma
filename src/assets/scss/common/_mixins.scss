@@ -12,3 +12,37 @@
   line-height: 19px;
   text-align: right;
 }
+
+@mixin textHero {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+}
+
+@mixin textH2 {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+@mixin textH3 {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin textIntroduction {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+}
+@mixin textParagraph {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+

@@ -25,6 +25,10 @@ gulp.task('copy',function(){
     return gulp.src('./src/assets/icons/**/*.{svg,png}')
         .pipe(gulp.dest('./dist/icons'))
 });
+gulp.task('copyjs',function(){
+    return gulp.src('./src/assets/js/**/*.js')
+        .pipe(gulp.dest('./dist/js'))
+});
 
 gulp.task("watch", function(done) {
     browserSync.init({
@@ -40,4 +44,4 @@ gulp.task("watch", function(done) {
     gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('copy', 'sass', 'fileinclude', 'watch'));
+gulp.task('default', gulp.series('copy', 'sass', 'fileinclude', 'copyjs', 'watch'));

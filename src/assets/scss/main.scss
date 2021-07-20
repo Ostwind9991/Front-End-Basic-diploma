@@ -2,15 +2,22 @@
 @import "./common/fonts.scss";
 @import "components/header";
 @import "components/homepage/homepage";
+@import "components/servicesItem";
 
-.homepageBanerSectionWrapper {
-  background: url("../icons/PatternSplash.png") no-repeat center/cover;
-  height: 100vh;
-}
-.homepageHeaderWrapper {
-  max-width: 1440px;
-  padding: 50px 60px 0 60px;
-  margin: auto;
-}
+.homepage {
+  &__BanerSectionWrapper {
+    background: url("../icons/PatternSplash.png") no-repeat center/cover;
+  }
 
+  &__HeaderWrapper {
+    max-width: 1440px;
+    padding: 3.47% 4.16% 0 4.16%;
+    margin: auto;
+  }
+
+  &__ExperienceServices {
+    background: url("../icons/Bg.png") no-repeat center/cover;
+    padding: 80px 60px;
+  }
+}
 

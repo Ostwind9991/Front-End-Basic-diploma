@@ -1,6 +1,6 @@
 .banner {
   background: url("../icons/SymbolLongleg.svg") no-repeat center/contain;
-  margin-top: 185px;
+  margin-top: 12.84%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,17 +14,17 @@
     text-align: center;
     color: #FFFFFF;
     max-width: 500px;
-    margin:58px auto 352px auto;
+    margin:4.02% auto 20.13% auto;
   }
 
   &__logo {
     position: absolute;
     text-align: center;
     bottom: 0;
-    width: 100%;
   }
   &__logo img {
     vertical-align: bottom;
+  max-width: 100%;
   }
 
   &__button {
