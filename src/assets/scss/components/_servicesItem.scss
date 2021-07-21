@@ -2,18 +2,19 @@
 @import "../common/variables";
 
 .servicesItem {
-  max-width: 28.68vw;
+  max-width: 413px;
   display: inline-block;
+
+  &__title {
+    margin-top: 20px;
+    @include textH3;
+    color: $ActiveRegular;
+  }
+
+  &__text {
+    margin-top: 15px;
+    @include textParagraph;
+    color: #fff;
+  }
 }
 
-.servicesItem h3 {
-  margin-top: 20px;
-  @include textH3;
-  color: $ActiveRegular;
-}
-
-.servicesItem p {
-  margin-top: 15px;
-  @include textParagraph;
-  color: #fff;
-}

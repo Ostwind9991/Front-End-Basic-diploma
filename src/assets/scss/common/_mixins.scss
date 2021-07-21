@@ -26,11 +26,18 @@
   font-size: 32px;
   line-height: 38px;
 }
+
 @mixin textH3 {
   font-family: "TT Norms", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+}
+@mixin textH4 {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 @mixin textIntroduction {
@@ -39,10 +46,32 @@
   font-size: 21px;
   line-height: 30px;
 }
+
 @mixin textParagraph {
   font-family: "TT Norms", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
 }
+@mixin textParagraphMin {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
 
+@mixin textH3Caps{
+  font-family: "TT Norms", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin GradientRedText {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #F0145A;
+}

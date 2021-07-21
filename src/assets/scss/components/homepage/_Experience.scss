@@ -1,6 +1,7 @@
 @import "../../common/mixins";
 @import "../../common/variables";
-.slid {
+
+.slidExper  {
   &__wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -37,8 +38,8 @@
     padding-bottom:0;
   }
 
-  &__dot:hover, .active, :after{
-    color: $Accent;
+  &__dot:hover, .active {
+    @include GradientRedText;
   }
   &__dot:hover::after {
     background-color: $Accent;
@@ -75,3 +76,4 @@
     max-width: 550px;
   }
 }
+
