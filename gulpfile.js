@@ -26,6 +26,15 @@ gulp.task('copy',function(){
         .pipe(gulp.dest('./dist/icons'))
 });
 
+gulp.task('copyjs',function(){
+    return gulp.src('./src/assets/js/**/*.js')
+        .pipe(gulp.dest('./dist/js'))
+});
+gulp.task('copyfonts',function(){
+    return gulp.src('./src/assets/fonts/**/*.{ttf,woff}')
+        .pipe(gulp.dest('./dist/fonts'))
+});
+
 gulp.task("watch", function(done) {
     browserSync.init({
         server: {
@@ -36,8 +45,7 @@ gulp.task("watch", function(done) {
 
     gulp.watch("./src/**/*.scss", gulp.series('sass'));
     gulp.watch("./src/pages/**/*.html").on('change', gulp.series('fileinclude'));
-    gulp.watch("./src/**/*.{svg,png}").on('change', gulp.series('copy'));
     gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('watch'));
+gulp.task('default', gulp.series('copy', 'sass', 'fileinclude', 'copyjs', 'copyfonts', 'watch'));

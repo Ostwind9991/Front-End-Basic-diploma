@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/main.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Hlegal. Юридична контора</title>
+<!--    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"-->
+<!--          rel="stylesheet">-->
+<!--    <script crossorigin="anonymous"-->
+<!--            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"-->
+<!--            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>-->
 </head>
 <body>
-@@include('../components/header/Header.html')
+<section class="homepage__BanerSectionWrapper">
+    <section class="homepage__HeaderWrapper">
+        @@include('../components/header/Header.html', {
+        "srcLogo": "./icons/header/LogoMin.png"
+        })
+    </section>
+    @@include('./components/BanerSection.html', {
+    'bannerTitle': "системний адміністратор правових рішень",
+    'bannerLogo': "./icons/Shade.png",
+    'bannerIcon': "./icons/Scrolldown.svg"
+    })
+</section>
+<section class="homepage__ExperienceServices">
+    <section class="homepage__ExperienceServicesWrapper">
+    @@include('./components/Experience.html')
+    @@include('../components/Services.html', {
+    'servicesMenuLink': "#",
+    'servicesMenuIcon': "./icons/Liinkarrow.svg",
+    'servicesMenu': "послуги ",
+    'serviceTitle': "Що ми вміємо робити краще за інших?"
+    })
+    </section>
+</section>
+<div class="homepage__ExpServBottom"></div>
+<section class="homepage__Team">
+    @@include('./components/Team.html')
+</section>
+<section class="homepage__Cases">
+    @@include('../components/Cases.html')
+</section>
+<script src="./js/simpleSlider.js"></script>
+<script src="./js/simpleSliderTeam.js"></script>
 </body>
 </html>

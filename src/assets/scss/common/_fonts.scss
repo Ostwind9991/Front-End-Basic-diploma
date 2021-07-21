@@ -1,9 +1,7 @@
 @font-face {
-    font-family: "TTNorms";
-    src: url("../../../../src/assets/fonts/TTNorms-Bold.ttf") format("ttf"),
-    url("../../../../src/assets/fonts/TTNorms-Bold.woff") format("woff");
-    src: url("../../../../src/assets/fonts/TTNorms-Medium.ttf") format("ttf"),
-    url("../../../../src/assets/fonts/TTNorms-Medium.woff") format("woff");
-    src: url("../../../../src/assets/fonts/TTNorms-Regular.ttf") format("ttf"),
-    url("../../../../src/assets/fonts/TTNorms-Regular.woff") format("woff");
+    font-family: "TT Norms";
+    src: url("../fonts/TTNorms-Bold.ttf") format("ttf"), url("../fonts/TTNorms-Bold.woff") format("woff");
+    src: url("../fonts/TTNorms-Medium.ttf") format("ttf"), url("../fonts/TTNorms-Medium.woff") format("woff");
+    src: url("../fonts/TTNorms-Regular.ttf") format("ttf"), url("../fonts/TTNorms-Regular.woff") format("woff");
 }
+

@@ -1,0 +1,92 @@
+@import "../../common/mixins";
+@import "../../common/variables";
+
+.slidTeam {
+  &__slidWrapper {
+    position: relative;
+    background-color: $GreyBg;
+    border-radius: 12px;
+  }
+
+  &__foto {
+    max-width: 413px;
+  }
+
+  &__wrapperDiscretion {
+    padding: 40px;
+  }
+
+  &__link {
+    @include textH3Caps;
+    color: $ActiveRegular;
+    margin-bottom: 3px;
+  }
+
+  &__title {
+    @include textHero;
+    @include GradientRedText;
+    margin-bottom: 20px;
+  }
+
+  &__firstname {
+    @include textH4;
+    color: $GreyText;
+    margin-bottom: 5px;
+  }
+  &__work {
+    @include textParagraphMin ;
+    color: $GreyText;
+  }
+
+  &__blogSlides {
+    display: flex;
+  }
+
+  &__dots {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &__dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: #d3edff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+}
+
+.active, .slidTeam__dot:hover {
+  background-color:$ActiveRegular;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+

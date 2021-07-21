@@ -21,7 +21,6 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  overflow: hidden;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -46,3 +45,6 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}

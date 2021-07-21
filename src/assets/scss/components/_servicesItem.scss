@@ -1,0 +1,20 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+.servicesItem {
+  max-width: 413px;
+  display: inline-block;
+
+  &__title {
+    margin-top: 20px;
+    @include textH3;
+    color: $ActiveRegular;
+  }
+
+  &__text {
+    margin-top: 15px;
+    @include textParagraph;
+    color: #fff;
+  }
+}
+
