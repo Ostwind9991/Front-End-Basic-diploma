@@ -78,6 +78,14 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+@mixin  textButton {
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
 
 @mixin GradientRedText {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);

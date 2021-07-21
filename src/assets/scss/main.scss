@@ -1,11 +1,14 @@
 @import 'reset';
 @import "./common/fonts.scss";
 @import "components/header";
-@import "components/homepage/homepage";
-@import "components/servicesItem";
+@import "components/homepage/BanerSection";
+@import "components/homepage/Experience";
+@import "components/homepage/Team";
 @import "components/services";
 @import "components/cases";
 @import "components/Publications";
+@import "components/Clients";
+@import "components/Footer";
 
 .homepage {
   &__BanerSectionWrapper {
@@ -55,10 +58,26 @@
     max-width: 1440px;
     margin: auto;
   }
+
   &__Publications {
+    background-color: $GreyBg;
+  }
+
+  &__PublicationsWrapper {
     max-width: 1440px;
     margin: auto;
     padding: 40px 60px 0 60px;
   }
+
+  &__Footer {
+    background-color: $GreyBg;
+  }
+
+  &__FooterWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 60px;
+  }
+
 }
 

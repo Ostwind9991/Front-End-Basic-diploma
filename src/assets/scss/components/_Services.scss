@@ -1,4 +1,6 @@
 @import "../common/mixins";
+@import "../common/variables";
+@import "servicesItem";
 
 .services {
   &__link {
