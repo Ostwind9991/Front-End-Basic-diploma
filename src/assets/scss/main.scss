@@ -5,6 +5,7 @@
 @import "components/servicesItem";
 @import "components/services";
 @import "components/cases";
+@import "components/Publications";
 
 .homepage {
   &__BanerSectionWrapper {
@@ -13,7 +14,7 @@
 
   &__HeaderWrapper {
     max-width: 1440px;
-    padding: 3.47% 4.16% 0 4.16%;
+    padding: 3.47% 60px 0 60px;
     margin: auto;
   }
 
@@ -48,6 +49,16 @@
     max-width: 1440px;
     margin: auto;
     padding: 0 60px 30px 60px;
+  }
+
+  &__Clients {
+    max-width: 1440px;
+    margin: auto;
+  }
+  &__Publications {
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 60px 0 60px;
   }
 }
 

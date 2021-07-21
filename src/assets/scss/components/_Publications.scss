@@ -1,0 +1,24 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+.publications {
+
+  &__link {
+    @include textH3Caps;
+    color: $ActiveRegular;
+    margin-bottom: 3px;
+  }
+
+  &__title {
+    @include textHero;
+    @include GradientRedText;
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    max-width: 413px;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+
+}

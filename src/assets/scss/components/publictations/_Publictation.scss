@@ -1,0 +1,21 @@
+@import "../../common/mixins";
+@import "../../common/variables";
+
+.publictation {
+
+  &__wrapper {
+    padding: 20px;
+  }
+
+  &__title {
+  @include textH4;
+  color: $ActiveRegular;
+  margin-bottom: 10px;
+  }
+
+  &__date {
+  @include textDate;
+  color: $GreyText;
+   
+  }
+}

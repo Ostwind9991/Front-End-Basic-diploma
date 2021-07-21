@@ -69,6 +69,16 @@
   text-transform: uppercase;
 }
 
+@mixin  textDate {
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 @mixin GradientRedText {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;

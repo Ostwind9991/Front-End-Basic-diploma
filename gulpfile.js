@@ -22,7 +22,7 @@ gulp.task('fileinclude', function() {
 });
 
 gulp.task('copy',function(){
-    return gulp.src('./src/assets/icons/**/*.{svg,png}')
+    return gulp.src('./src/assets/icons/**/*.{svg,png,jpg}')
         .pipe(gulp.dest('./dist/icons'))
 });
 
