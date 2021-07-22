@@ -1,0 +1,22 @@
+@import 'reset';
+@import "./common/fonts.scss";
+@import "components/header";
+@import "components/Footer";
+
+.aboutUs {
+  &__HeaderWrapper {
+    max-width: 1440px;
+    padding: 3.47% 60px 0 60px;
+    margin: auto;
+  }
+
+  &__Footer {
+    background-color: $GreyBg;
+  }
+
+  &__FooterWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 60px;
+  }
+}

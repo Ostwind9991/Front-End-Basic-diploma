@@ -2,12 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About us</title>
+    <title>Homepage</title>
+    <link href="./css/about_us.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Hlegal. О нас</title>
 </head>
 <body>
-<div>asdasdassaasssssssasdasdassaasssssss</div>
-<div>asdasdassaasssssss</div>
-<div>asdasdassaasssssss</div>
-<div>asdasdassaasssss324aasdasasdasdsadfsdfsdfdasd34vss</div>
+<section class="aboutUs__HeaderWrapper">
+        @@include('../components/header/Header.html', {
+        "srcLogo": "./icons/header/LogoMin.png"
+        })
+</section>
+
+</section>
+
+<section class="aboutUs__Footer">
+    <section class="aboutUs__FooterWrapper">
+        @@include('../components/Footer.html',{
+        'footerAddress':"Одеса, Адміральський пр., 3",
+        'footerMap':"Подивитися на мапі",
+        'footerSocFacebook':"./icons/Facebook.svg",
+        'footerTell':"+38 (050) 390 15 91",
+        'footerMail':"contact@hlegals.net",
+        'footerCooperate':"© 2021 ТОВ Юридична компанія «HLEGALS»",
+        })
+    </section>
+</section>
 </body>
 </html>

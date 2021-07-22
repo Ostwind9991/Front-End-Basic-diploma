@@ -39,7 +39,7 @@ gulp.task("watch", function(done) {
     browserSync.init({
         server: {
             baseDir: "./dist",
-            index: "index.html"
+            index: "about_us.html"
         }
     })
 
