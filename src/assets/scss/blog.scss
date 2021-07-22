@@ -1,0 +1,39 @@
+@import 'reset';
+@import "./common/fonts.scss";
+@import "./components/publictations/Publictation";
+@import "./components/HeaderLight";
+@import "./components/Footer";
+
+.blog {
+
+  &__HeaderWrapper {
+    max-width: 1440px;
+    padding: 3.47% 60px 0 60px;
+    margin: auto;
+  }
+
+  &__PublicationsWrapper {
+    margin-top: 58px;
+    padding: 40px 0 60px 0;
+    background-color: $GreyBg;
+  }
+
+  &__Publications {
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 60px;
+    column-count: 3;
+    column-gap: 40px;
+    text-align: center;
+  }
+
+  &__Footer {
+    background-color: $GreyBg;
+  }
+
+  &__FooterWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 60px;
+  }
+}

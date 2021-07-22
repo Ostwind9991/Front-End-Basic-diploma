@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link href="./css/blog.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Hlegal. Публікації</title>
+</head>
+<body>
+<section class="blog__HeaderWrapper">
+    @@include('../components/header/HeaderLight.html', {
+    "srcLogo": "./icons/header/HeaderLightLogo.svg",
+    "headerlogoTitle": "публікації",
+    "srcLogoSlash": "./icons/header/SymbolSlash.svg",
+    "headerSoc": "./icons/header/FacebookLight.svg"
+    })
+</section>
+<section class="blog__PublicationsWrapper">
+    <div class="blog__switcher">
+        <div class="blog__itemLeft"><a>новини</a></div>
+        <div class="blog__itemRight"><a>компанія</a></div>
+    </div>
+    <section class="blog__Publications">
+
+        @@include('../components/publictations/Publictation.html',{
+        'publictationImg': "",
+        'publictationTitle':"Валютний контроль помер, хай живе валютний контроль!",
+        'publictationDate':"14 червня",
+        'publictationShortdisc':"Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».",
+        })
+
+        @@include('../components/publictations/Publictation.html',{
+        'publictationImg': "./icons/publictations/imagePublications.jpg",
+        'publictationTitle':"Equity associate",
+        'publictationDate':"22 квітня",
+        'publictationShortdisc':"На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…",
+        })
+
+        @@include('../components/publictations/Publictation.html',{
+        'publictationImg': "./icons/publictations/imagePublications.jpg",
+        'publictationTitle':"Equity associate",
+        'publictationDate':"22 квітня",
+        'publictationShortdisc':"На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…",
+        })
+
+        @@include('../components/publictations/Publictation.html',{
+        'publictationImg': "./icons/publictations/imagePublications.jpg",
+        'publictationTitle':"Equity associate",
+        'publictationDate':"22 квітня",
+        'publictationShortdisc':"На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…",
+        })
+
+        @@include('../components/publictations/Publictation.html',{
+        'publictationImg': "./icons/publictations/imagePublications.jpg",
+        'publictationTitle':"Equity associate",
+        'publictationDate':"22 квітня",
+        'publictationShortdisc':"На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…",
+        })
+
+        @@include('../components/publictations/Publictation.html',{
+        'publictationImg': "./icons/publictations/imagePublications.jpg",
+        'publictationTitle':"Equity associate",
+        'publictationDate':"22 квітня",
+        'publictationShortdisc':"На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…",
+        })
+
+        @@include('../components/publictations/Publictation.html',{
+        'publictationImg': "./icons/publictations/imagePublications.jpg",
+        'publictationTitle':"Equity associate",
+        'publictationDate':"22 квітня",
+        'publictationShortdisc':"На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…",
+        })
+    </section>
+</section>
+<section class="blog__Footer">
+    <section class="blog__FooterWrapper">
+        @@include('../components/Footer.html',{
+        'footerAddress':"Одеса, Адміральський пр., 3",
+        'footerMap':"Подивитися на мапі",
+        'footerSocFacebook':"./icons/Facebook.svg",
+        'footerTell':"+38 (050) 390 15 91",
+        'footerMail':"contact@hlegals.net",
+        'footerCooperate':"© 2021 ТОВ Юридична компанія «HLEGALS»",
+        })
+    </section>
+</section>
+</body>
+</html>

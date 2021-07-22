@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link href="./css/team.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Hlegal. Команда</title>
+</head>
+<body>
+<section class="team__HeaderWrapper">
+    @@include('../components/header/HeaderLight.html', {
+    "srcLogo": "./icons/header/HeaderLightLogo.svg",
+    "headerlogoTitle": "команда",
+    "srcLogoSlash": "./icons/header/SymbolSlash.svg",
+    "headerSoc": "./icons/header/FacebookLight.svg"
+    })
+</section>
+<section class="team__Wrapper">
+    <h1 class="team__title">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
+    <section class="team__ItemWrapper">
+    @@include('./components/teamItem.html', {
+    "teamItemPhoto": "./icons/team/Photo.jpg",
+    "teamItemName": "Олександр Олександровський",
+    "teamItemWork": "Керуючий партнер",
+    "teamItemIconNext": "./icons/team/Open.svg"
+    })
+    @@include('./components/teamItem.html', {
+    "teamItemPhoto": "./icons/team/Photo1.jpg",
+    "teamItemName": "Оксана Кобзар",
+    "teamItemWork": "Equity partner, Attorney-at-law",
+    "teamItemIconNext": "./icons/team/Open.svg"
+    })
+    @@include('./components/teamItem.html', {
+    "teamItemPhoto": "./icons/team/Photo-1.jpg",
+    "teamItemName": "Владислав Мельник",
+    "teamItemWork": "Associate",
+    "teamItemIconNext": "./icons/team/Open.svg"
+    })
+    @@include('./components/teamItem.html', {
+    "teamItemPhoto": "./icons/team/Photo-4.jpg",
+    "teamItemName": "Владислав Мельник",
+    "teamItemWork": "Associate",
+    "teamItemIconNext": "./icons/team/Open.svg"
+    })
+    @@include('./components/teamItem.html', {
+    "teamItemPhoto": "./icons/team/Photo-3.jpg",
+    "teamItemName": "Оксана Кобзар",
+    "teamItemWork": "Equity partner, Attorney-at-law",
+    "teamItemIconNext": "./icons/team/Open.svg"
+    })
+    @@include('./components/teamItem.html', {
+    "teamItemPhoto": "./icons/team/Photo-2.jpg",
+    "teamItemName": "Юлія Гудименко",
+    "teamItemWork": "Associate, Attorney-at-law",
+    "teamItemIconNext": "./icons/team/Open.svg"
+    })
+    </section>
+</section>
+<section class="team__Footer">
+    <section class="team__FooterWrapper">
+        @@include('../components/Footer.html',{
+        'footerAddress':"Одеса, Адміральський пр., 3",
+        'footerMap':"Подивитися на мапі",
+        'footerSocFacebook':"./icons/Facebook.svg",
+        'footerTell':"+38 (050) 390 15 91",
+        'footerMail':"contact@hlegals.net",
+        'footerCooperate':"© 2021 ТОВ Юридична компанія «HLEGALS»",
+        })
+    </section>
+</section>
+</body>
+</html>

@@ -15,6 +15,9 @@ gulp.task('fileinclude', function() {
         './src/pages/about_us/about_us.html',
         './src/pages/services/services.html',
         './src/pages/service_page/service_page.html',
+        './src/pages/teamPage/teamPage.html',
+        './src/pages/team/team.html',
+        './src/pages/blog/blog.html',
         './src/pages/homepage/index.html'
     ]).pipe(fileinclude({
             prefix: '@@',
@@ -41,7 +44,7 @@ gulp.task("watch", function(done) {
     browserSync.init({
         server: {
             baseDir: "./dist",
-            index: "service_page.html"
+            index: "blog.html"
         }
     })
 

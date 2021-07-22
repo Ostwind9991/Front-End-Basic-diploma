@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <link href="./css/teamPage.css" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Hlegal. Сторінка команди</title>
+</head>
+<body>
+<section class="teamPage__HeaderWrapper">
+  @@include('../components/header/HeaderLight.html', {
+  "srcLogo": "./icons/header/HeaderLightLogo.svg",
+  "headerlogoTitle": "команда",
+  "srcLogoSlash": "./icons/header/SymbolSlash.svg",
+  "headerSoc": "./icons/header/FacebookLight.svg"
+  })
+</section>
+<section class="teamPage__TeamWrapper">
+  <div class="teamPage__photo">
+    <a><img src="./icons/team/Photo.jpg"></a>
+  </div>
+  <div class="teamPage__item">
+      <div class="teamPage__heading">
+        <h2>Олександр Кац</h2>
+        <div class="teamPage__contact">
+          <span>Керуючий партнер</span>
+          <a href="#">kac@hlegals.net</a>
+          <a href="#">Профіль в LinkedIn</a>
+        </div>
+      </div>
+      <div class="teamPage__bio">
+        <p>Олександр очолює практику міжнародної торгівлі та шиппінгу. Він спеціалізується на вирішенні спорів, пов'язаних з купівлею-продажем сировинних товарів і перевезенням товарів морем.</p>
+        <br>
+        <p>Десис представляє інтереси судновласників, експедиторів, вантажовласників, морських агентів, контейнерних ліній, а також міжнародних банків і клубів P & I.</p>
+        <h4>Освіта</h4>
+        <p>Національний університет «Одеська юридична академія», магістр права.</p>
+        <h4>Досвід роботи</h4>
+        <p>До його професійного досвіду відноситься врегулювання суперечок за англійським правом і представництво інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Данило також представляє інтереси клієнтів у державних судах України по аналогічним спорах, а також в МКАС і МАК при ТПП України</p>
+      </div>
+  </div>
+</section>
+<section class="teamPage__Footer">
+  <section class="teamPage__FooterWrapper">
+    @@include('../components/Footer.html',{
+    'footerAddress':"Одеса, Адміральський пр., 3",
+    'footerMap':"Подивитися на мапі",
+    'footerSocFacebook':"./icons/Facebook.svg",
+    'footerTell':"+38 (050) 390 15 91",
+    'footerMail':"contact@hlegals.net",
+    'footerCooperate':"© 2021 ТОВ Юридична компанія «HLEGALS»",
+    })
+  </section>
+</section>
+</body>
+</html>
