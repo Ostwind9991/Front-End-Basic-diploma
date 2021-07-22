@@ -99,6 +99,30 @@
   font-size: 16px;
   line-height: 19px;
 }
+@mixin  textLogo {
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 45px;
+}
+@mixin  textAdvantages {
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+}
+@mixin  textTeamTitle {
+  font-family: "TT Norms", sans-serif;
+  font-size: 96px;
+  line-height: 113px;
+  text-align: center;
+  letter-spacing: 63px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+}
 
 @mixin GradientRedText {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);

@@ -1,0 +1,91 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__logoTitle {
+    @include textLogo;
+    color: $White;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__wrapperLanguage {
+    display: flex;
+    @include textMenu;
+    color: $White;
+    align-items: center;
+  }
+
+  &__language {
+    display: flex;
+  }
+
+  &__language span {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  &__language span:hover {
+    background-color: $Accent;
+    border-radius: 8px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact &__tel, &__soc, &__address {
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &__tel:hover, &__address:hover {
+    color: $Accent;
+  }
+
+  &__contact &__tel::before, &__soc::before, &__address::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #E6E6F0;
+    position: relative;
+    margin-right: 10px;
+  }
+
+
+  &__menu {
+    @include titleBlue;
+    color: $White;
+    cursor: pointer;
+  }
+
+  &__menuPItem {
+    display: inline-block;
+    margin-left: 15px;
+
+  }
+
+  &__menu li:hover {
+    color: $Accent;
+
+  }
+}

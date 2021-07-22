@@ -9,13 +9,22 @@
 </head>
 <body>
 <section class="aboutUs__HeaderWrapper">
-        @@include('../components/header/Header.html', {
-        "srcLogo": "./icons/header/LogoMin.png"
-        })
+    @@include('../components/header/HeaderLight.html', {
+    "srcLogo": "./icons/header/HeaderLightLogo.svg",
+    "headerlogoTitle": "о нас",
+    "srcLogoSlash": "./icons/header/SymbolSlash.svg",
+    "headerSoc": "./icons/header/FacebookLight.svg"
+    })
 </section>
-
+<section class="aboutUs__Advantages">
+    @@include('./components/Advantages.html')
 </section>
-
+<section class="aboutUs__Team">
+    <h3 class="aboutUs__TeamTitle">команда</h3>
+</section>
+<section class="aboutUs__MoreDescription">
+    @@include('./components/MoreDescription.html')
+</section>
 <section class="aboutUs__Footer">
     <section class="aboutUs__FooterWrapper">
         @@include('../components/Footer.html',{
