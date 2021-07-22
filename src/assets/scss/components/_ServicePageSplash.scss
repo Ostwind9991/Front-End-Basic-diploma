@@ -1,0 +1,63 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+.servicepagesplash {
+  text-align: center;
+
+  &__title {
+    @include textHero;
+    @include GradientRedText;
+    margin: 20px 0;
+  }
+
+  &__description {
+    @include textIntroduction;
+    color: $White;
+    margin: 0 290px;
+  }
+
+  &__baton {
+    display: inline-block;
+    margin: 40px 0 80px 0;
+    @include textButton;
+    color: $White;
+    width: 250px;
+    padding: 16px 0;
+    background-color: $ActiveRegular;
+    box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+  }
+
+  &__services {
+    margin: 0 175px;
+    border-top:4px solid $GreySeparator ;
+    text-align: left;
+
+  }
+  &__services h4 {
+    @include textH3;
+    color: $White;
+    margin: 20px 0;
+  }
+
+  &__textWrapper {
+    columns: 2 auto;
+    column-gap: 65px;
+    padding-left:20px;
+  }
+  &__textWrapper {
+    list-style:disc;
+  }
+
+  &__text {
+    display: list-item;
+    @include textParagraph;
+    color: $White;
+    margin-bottom: 40px;
+  }
+  &__text::marker {
+    color: $Accent;
+  }
+
+
+}
