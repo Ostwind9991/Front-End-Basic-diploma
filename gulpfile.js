@@ -13,6 +13,7 @@ gulp.task('sass', function(){
 gulp.task('fileinclude', function() {
     return gulp.src([
         './src/pages/about_us/about_us.html',
+        './src/pages/services/services.html',
         './src/pages/homepage/index.html'
     ]).pipe(fileinclude({
             prefix: '@@',
@@ -39,7 +40,7 @@ gulp.task("watch", function(done) {
     browserSync.init({
         server: {
             baseDir: "./dist",
-            index: "about_us.html"
+            index: "services.html"
         }
     })
 

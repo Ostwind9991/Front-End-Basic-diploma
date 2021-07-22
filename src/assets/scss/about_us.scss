@@ -3,6 +3,7 @@
 @import "components/HeaderLight";
 @import "components/about_us/Advantages";
 @import "components/about_us/MoreDescription";
+@import "components/about_us/Achievments";
 @import "components/Footer";
 
 .aboutUs {
@@ -34,6 +35,16 @@
     max-width: 1440px;
     margin: 80px auto 93px auto;
     padding: 0 172px;
+  }
+
+  &__Achievments {
+    background-color: $GreyBg;
+  }
+
+  &__AchievmentsWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 30px 60px;
   }
 
   &__Footer {

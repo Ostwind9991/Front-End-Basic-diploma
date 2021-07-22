@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link href="./css/services.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Hlegal. Послуги</title>
+</head>
+<body>
+<section class="services__BanerSectionWrapper">
+    <section class="services__HeaderWrapper">
+        @@include('../components/header/HeaderDark.html', {
+        "srcLogo": "./icons/header/HeaderDarkLogo.svg",
+        "headerlogoTitle": "послуги",
+        "srcLogoSlash": "./icons/header/SymbolSlash.svg",
+        "headerSoc": "./icons/header/Facebook.svg"
+        })
+    </section>
+    <section class="services__ServicesWrapper">
+    @@include('../components/Services.html', {
+    'servicesMenuLink': "#",
+    'servicesMenuIcon': "./icons/Liinkarrow.svg",
+    'servicesMenu': "послуги ",
+    'serviceTitle': "Що ми вміємо робити краще за інших?"
+    })
+    </section>
+</section>
+<div class="services__ExpServBottom"></div>
+<section class="services__Cases">
+    @@include('../components/Cases.html')
+</section>
+<section class="services__Clients">
+    @@include('../components/Clients.html',{
+    'clientsLogo': "./icons/HillelLogo.svg",
+    'clientsLogo1': "./icons/image.svg",
+    'clientsLogo2': "./icons/logo.svg",
+    'clientsLogo3': "./icons/retina_2.svg",
+    'clientsLogo4': "./icons/Frame-1.svg",
+    'clientsLogo5': "./icons/Frame.svg",
+    'clientsLogo6': "./icons/logo3.svg",
+    'clientsLogo7': "./icons/ecolease.svg",
+    'clientsLogo8': "./icons/image1.svg",
+    'clientsLogo9': "./icons/icon-logo.svg",
+    'clientsLogo10': "./icons/logo4.svg",
+    'clientsLogo11': "./icons/logoM.svg",
+    })
+</section>
+<section class="services__Footer">
+    <section class="services__FooterWrapper">
+        @@include('../components/Footer.html',{
+        'footerAddress':"Одеса, Адміральський пр., 3",
+        'footerMap':"Подивитися на мапі",
+        'footerSocFacebook':"./icons/Facebook.svg",
+        'footerTell':"+38 (050) 390 15 91",
+        'footerMail':"contact@hlegals.net",
+        'footerCooperate':"© 2021 ТОВ Юридична компанія «HLEGALS»",
+        })
+    </section>
+</section>
+</body>
+</html>
