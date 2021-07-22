@@ -20,6 +20,15 @@
     @include textH3Caps;
     color: $ActiveRegular;
     margin-bottom: 3px;
+    display: flex;
+  }
+  &__link:hover, {
+    color: $Accent;
+  }
+
+  &__link img {
+    display: inline-block;
+    margin-left: 5px;
   }
 
   &__title {

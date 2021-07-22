@@ -4,9 +4,15 @@
 
 .services {
   &__link {
-  @include textH3Caps;
+    @include textH3Caps;
     color: #fff;
     opacity: 0.5;
+    display: flex;
+  }
+
+  &__link img {
+    display: inline-block;
+    margin-left: 5px;
   }
 
   &__title {

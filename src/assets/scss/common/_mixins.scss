@@ -72,7 +72,7 @@
 @mixin  textDate {
   font-family: "TT Norms", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 1px;
@@ -81,10 +81,23 @@
 @mixin  textButton {
   font-family: "TT Norms", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
+}
+@mixin  textCooperate {
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+@mixin  textTell {
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 @mixin GradientRedText {

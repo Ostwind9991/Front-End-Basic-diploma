@@ -4,5 +4,86 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  border-top: 4px solid $GreySeparator;
+  padding: 32px 0 40px 0;
+
+  &__contact {
+
+  }
+
+  &__addressWrapper {
+    display: flex;
+    margin-bottom: 22px;
+    align-items: center;
+  }
+
+  &__address {
+    @include textCooperate;
+    color: $MainRegular;
+    margin-right: 37px;
+  }
+
+  &__map {
+    @include textDate;
+    color: $ActiveRegular;
+  }
+
+  &__map::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin-bottom: 1px;
+    margin-right: 10px;
+    background-color: $GreyText;
+  }
+
+  &__contactsWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__tell {
+    @include textTell;
+    color: $MainAlt;
+    margin: 0 16px 0 18px;
+  }
+
+  &__tell::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    background-color: $GreyText;
+  }
+
+  &__mail:hover, &__tell:hover, &__map:hover {
+    color: $Accent;
+  }
+
+  &__mail {
+    @include textTell;
+    color: $ActiveRegular;
+  }
+
+  &__mail::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin-bottom: 1px;
+    margin-right: 10px;
+    background-color: $GreyText;
+  }
+
+  &__cooperate {
+    @include textCooperate;
+    color: $GreyText;
+  }
 
 }
