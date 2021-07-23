@@ -24,10 +24,10 @@
     })
 </section>
 <section class="homepage__ExperienceServices">
-    <section class="homepage__ExperienceServicesWrapper">
+    <section class="homepage__ExperienceServicesWrapper" id="Experience">
     @@include('./components/Experience.html')
     @@include('../components/Services.html', {
-    'servicesMenuLink': "#",
+    'servicesMenuLink': "./services.html",
     'servicesMenuIcon': "./icons/Liinkarrow.svg",
     'servicesMenu': "послуги ",
     'serviceTitle': "Що ми вміємо робити краще за інших?"
@@ -60,7 +60,7 @@
 <section class="homepage__Publications">
     <section class="homepage__PublicationsWrapper">
     @@include('../components/Publications.html',{
-    'publicationsMenuLink': "#",
+    'publicationsMenuLink': "./blog.html",
     'servicesMenu':"Публікації",
     'publicationsMenuIcon':"./icons/publictations/Vector2.svg",
     'serviceTitle':"Нам є що розповісти",
@@ -81,5 +81,6 @@
 </section>
 <script src="./js/simpleSlider.js"></script>
 <script src="./js/simpleSliderTeam.js"></script>
+<script src="./js/scroll.js"></script>
 </body>
 </html>

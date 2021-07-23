@@ -1,0 +1,39 @@
+<section class="form">
+    <h2 class="form__title">Ми хотіли б Вам допомогти</h2>
+    <div class="form__input">
+        @@include('./FormInput.html',{
+        'formInputname':"@@formInputnameForm",
+        'formInputplaceholder':"@@formInputplaceholderForm",
+        'formInputtype':"@@formInputtypeForm",
+        'formInput':"@@formInputForm",
+        })
+    </div>
+    <div class="form__textarea">
+        @@include('./FormTextarea.html',{
+        'formTextareaname':"@@formTextareanameForm",
+        'formTextareaplaceholder':"@@formTextareaplaceholderForm",
+        'formTextareatype':"@@formTextareatypeForm",
+        'formTextarea':"@@formTextareaForm",
+        })
+    </div>
+    <h3 class="form__subtitle">Як вам відповісти?</h3>
+    <div class="form__input">
+        @@include('./FormInput.html',{
+        'formInputname':"@@formInputnameForm1",
+        'formInputplaceholder':"@@formInputplaceholderForm1",
+        'formInputtype':"@@formInputtypeForm1",
+        'formInput':"@@formInputForm1",
+        })
+    </div>
+    <div class="form__input">
+        @@include('./FormInput.html',{
+        'formInputname':"@@formInputnameForm2",
+        'formInputplaceholder':"@@formInputplaceholderForm2",
+        'formInputtype':"@@formInputtypeForm2",
+        'formInput':"@@formInputForm2",
+        })
+    </div>
+    <div class="form__buttonWrapper">
+        <a href="#" class="form__button">Надіслати запит</a>
+    </div>
+</section>

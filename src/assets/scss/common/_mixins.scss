@@ -20,6 +20,13 @@
   line-height: 50px;
 }
 
+@mixin textHeroMOBILE {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+
 @mixin textH2 {
   font-family: "TT Norms", sans-serif;
   font-weight: 600;

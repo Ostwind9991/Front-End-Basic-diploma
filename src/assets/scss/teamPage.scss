@@ -95,3 +95,10 @@
     border: none;
   }
 }
+
+
+.header__menuPItem:nth-child(3) {
+  color: $Accent;
+  text-decoration: underline;
+}
+
