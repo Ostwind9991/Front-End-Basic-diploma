@@ -10,6 +10,14 @@
     margin: 20px 0;
   }
 
+  @media (max-width: 375px) {
+    &__title {
+      @include textHeroMOBILE;
+      @include GradientRedText;
+      margin: 20px 0;}
+
+  }
+
   &__description {
     @include textIntroduction;
     color: $White;
