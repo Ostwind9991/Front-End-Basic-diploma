@@ -1,0 +1,21 @@
+@import "../../common/mixins";
+@import "../../common/variables";
+
+.moredescription {
+
+  &__wrapper {
+  display: flex;
+  }
+
+  &__text {
+    @include textIntroduction;
+    color: #000;
+    margin-right: 40px;
+    max-width: 641px;
+  }
+
+  &__title {
+    @include textHero;
+    @include GradientRedText;
+  }
+}

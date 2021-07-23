@@ -13,6 +13,13 @@ gulp.task('sass', function(){
 gulp.task('fileinclude', function() {
     return gulp.src([
         './src/pages/about_us/about_us.html',
+        './src/pages/services/services.html',
+        './src/pages/service_page/service_page.html',
+        './src/pages/teamPage/teamPage.html',
+        './src/pages/team/team.html',
+        './src/pages/blog/blog.html',
+        './src/pages/post/post.html',
+        './src/pages/contact/contact.html',
         './src/pages/homepage/index.html'
     ]).pipe(fileinclude({
             prefix: '@@',
@@ -22,7 +29,7 @@ gulp.task('fileinclude', function() {
 });
 
 gulp.task('copy',function(){
-    return gulp.src('./src/assets/icons/**/*.{svg,png}')
+    return gulp.src('./src/assets/icons/**/*.{svg,png,jpg}')
         .pipe(gulp.dest('./dist/icons'))
 });
 
@@ -39,7 +46,7 @@ gulp.task("watch", function(done) {
     browserSync.init({
         server: {
             baseDir: "./dist",
-            index: "index.html"
+            index: "contact.html"
         }
     })
 

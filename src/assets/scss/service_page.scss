@@ -1,0 +1,64 @@
+@import 'reset';
+@import "./common/fonts.scss";
+@import "components/HeaderDark";
+@import "components/cases";
+@import "components/Publications";
+@import "components/ServicePageSplash";
+@import "components/Footer";
+
+.service_page {
+
+  &__BanerSectionWrapper {
+    background: url("../icons/BGservicepages.jpg") no-repeat center/cover;
+    border-radius: 0 0 12px 12px;
+  }
+
+  &__HeaderWrapper {
+    max-width: 1440px;
+    padding: 3.47% 60px 0 60px;
+    margin: auto;
+  }
+
+  &__ServicePageSplashWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 0 60px 0;
+  }
+
+  &__ExpServBottom {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: url("../icons/Cardshadow.svg") no-repeat 100%/100%;
+  }
+
+  &__Cases {
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 60px 30px 60px;
+  }
+
+  &__Publications {
+    background-color: $GreyBg;
+  }
+
+  &__PublicationsWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 60px 0 60px;
+  }
+
+  &__Footer {
+    background-color: $GreyBg;
+  }
+
+  &__FooterWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 60px;
+  }
+}
+
+.header__menuPItem:nth-child(2) {
+  text-decoration: underline;
+}

@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link href="./css/main.css" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hlegal. Юридична контора</title>
-<!--    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"-->
-<!--          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"-->
-<!--          rel="stylesheet">-->
-<!--    <script crossorigin="anonymous"-->
-<!--            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"-->
-<!--            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>-->
 </head>
 <body>
 <section class="homepage__BanerSectionWrapper">
     <section class="homepage__HeaderWrapper">
-        @@include('../components/header/Header.html', {
-        "srcLogo": "./icons/header/LogoMin.png"
+        @@include('../components/header/HeaderDark.html', {
+        "srcLogo": "./icons/header/LogoMin.png",
+        "headerlogoTitle": "",
+        "srcLogoSlash": "",
+        "headerSoc": "./icons/header/Facebook.svg"
         })
     </section>
     @@include('./components/BanerSection.html', {
@@ -27,10 +24,10 @@
     })
 </section>
 <section class="homepage__ExperienceServices">
-    <section class="homepage__ExperienceServicesWrapper">
+    <section class="homepage__ExperienceServicesWrapper" id="Experience">
     @@include('./components/Experience.html')
     @@include('../components/Services.html', {
-    'servicesMenuLink': "#",
+    'servicesMenuLink': "./services.html",
     'servicesMenuIcon': "./icons/Liinkarrow.svg",
     'servicesMenu': "послуги ",
     'serviceTitle': "Що ми вміємо робити краще за інших?"
@@ -44,7 +41,46 @@
 <section class="homepage__Cases">
     @@include('../components/Cases.html')
 </section>
+<section class="homepage__Clients">
+    @@include('../components/Clients.html',{
+    'clientsLogo': "./icons/HillelLogo.svg",
+    'clientsLogo1': "./icons/image.svg",
+    'clientsLogo2': "./icons/logo.svg",
+    'clientsLogo3': "./icons/retina_2.svg",
+    'clientsLogo4': "./icons/Frame-1.svg",
+    'clientsLogo5': "./icons/Frame.svg",
+    'clientsLogo6': "./icons/logo3.svg",
+    'clientsLogo7': "./icons/ecolease.svg",
+    'clientsLogo8': "./icons/image1.svg",
+    'clientsLogo9': "./icons/icon-logo.svg",
+    'clientsLogo10': "./icons/logo4.svg",
+    'clientsLogo11': "./icons/logoM.svg",
+    })
+</section>
+<section class="homepage__Publications">
+    <section class="homepage__PublicationsWrapper">
+    @@include('../components/Publications.html',{
+    'publicationsMenuLink': "./blog.html",
+    'servicesMenu':"Публікації",
+    'publicationsMenuIcon':"./icons/publictations/Vector2.svg",
+    'serviceTitle':"Нам є що розповісти",
+    })
+    </section>
+</section>
+<section class="homepage__Footer">
+    <section class="homepage__FooterWrapper">
+    @@include('../components/Footer.html',{
+        'footerAddress':"Одеса, Адміральський пр., 3",
+        'footerMap':"Подивитися на мапі",
+        'footerSocFacebook':"./icons/Facebook.svg",
+        'footerTell':"+38 (050) 390 15 91",
+        'footerMail':"contact@hlegals.net",
+        'footerCooperate':"© 2021 ТОВ Юридична компанія «HLEGALS»",
+        })
+    </section>
+</section>
 <script src="./js/simpleSlider.js"></script>
 <script src="./js/simpleSliderTeam.js"></script>
+<script src="./js/scroll.js"></script>
 </body>
 </html>

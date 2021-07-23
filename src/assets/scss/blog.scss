@@ -1,0 +1,92 @@
+@import 'reset';
+@import "./common/fonts.scss";
+@import "./common/mixins";
+@import "./common/variables";
+@import "./components/publictations/Publictation";
+@import "./components/HeaderLight";
+@import "./components/Footer";
+
+.blog {
+
+  &__HeaderWrapper {
+    max-width: 1440px;
+    padding: 3.47% 60px 0 60px;
+    margin: auto;
+  }
+
+  &__switcher {
+    width:260px;
+    padding: 2px;
+    border-radius: 12px;
+    background-color: $GreySeparator;
+    display: flex;
+    margin: auto;
+  }
+
+  &__itemLeft{
+    border-radius: 12px;
+    background-color: #fff;
+    width: 50%;
+    text-align: center;
+    padding: 7px 0;
+  }
+  &__itemLeft a {
+    @include textH4;
+    color: $MainRegular;
+  }
+
+  &__itemRight{
+    border-radius: 12px;
+    width: 50%;
+    text-align: center;
+    padding: 7px 0;
+  }
+  &__itemRight a {
+    @include textH4;
+    color: $MainRegular;
+  }
+
+  &__PublicationsWrapper {
+    margin-top: 58px;
+    padding: 40px 0 60px 0;
+    background-color: $GreyBg;
+  }
+
+  &__Publications {
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 60px;
+    column-count: 3;
+    column-gap: 40px;
+    text-align: center;
+  }
+
+  &__seeMore a{
+    display: inline-block;
+    @include textButton;
+    color: #fff;
+    padding: 16px 0;
+    background-color: $ActiveRegular;
+    border-radius: 12px;
+    width: 250px;
+  }
+  &__seeMore {
+    text-align: center;
+  }
+
+  &__Footer {
+    background-color: $GreyBg;
+  }
+
+  &__FooterWrapper {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 60px;
+  }
+}
+
+
+.header__menuPItem:nth-child(4) {
+  color: $Accent;
+  text-decoration: underline;
+}
