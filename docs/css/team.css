@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ''; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  border: none; }
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Bold.ttf") format("ttf"), url("../fonts/TTNorms-Bold.woff") format("woff");
+  src: url("../fonts/TTNorms-Medium.ttf") format("ttf"), url("../fonts/TTNorms-Medium.woff") format("woff");
+  src: url("../fonts/TTNorms-Regular.ttf") format("ttf"), url("../fonts/TTNorms-Regular.woff") format("woff"); }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .header__logoTitle {
+    font-family: "TT Norms", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 45px;
+    color: #323264; }
+  .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .header__wrapperLanguage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "TT Norms", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #B3B3BA;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__language span {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px; }
+  .header__language span:hover {
+    background-color: #F0145A;
+    border-radius: 8px; }
+  .header__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__contact .header__tel, .header__soc, .header__address {
+    margin-left: 20px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__tel:hover, .header__address:hover {
+    color: #F0145A; }
+  .header__contact .header__tel::before, .header__soc::before, .header__address::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #E6E6F0;
+    position: relative;
+    margin-right: 10px; }
+  .header__menu {
+    font-family: "TT Norms", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #24A3FF;
+    cursor: pointer; }
+  .header__menuPItem {
+    display: inline-block;
+    margin-left: 15px; }
+  .header__menu li:hover {
+    color: #F0145A; }
+
+.teamItem {
+  max-width: 413px; }
+  .teamItem__photo {
+    width: 100%; }
+  .teamItem__wrapper {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .teamItem__name {
+    font-family: "TT Norms", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #323264;
+    margin-bottom: 5px; }
+  .teamItem__work {
+    font-family: "TT Norms", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B3B3BA; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 4px solid #E6E6F0;
+  padding: 32px 0 40px 0; }
+  .footer__addressWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 22px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer__address {
+    font-family: "TT Norms", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #323264;
+    margin-right: 37px; }
+  .footer__map {
+    font-family: "TT Norms", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF; }
+  .footer__map::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin-bottom: 1px;
+    margin-right: 10px;
+    background-color: #B3B3BA; }
+  .footer__contactsWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer__tell {
+    font-family: "TT Norms", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #46466E;
+    margin: 0 16px 0 18px; }
+  .footer__tell::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    background-color: #B3B3BA; }
+  .footer__mail:hover, .footer__tell:hover, .footer__map:hover {
+    color: #F0145A; }
+  .footer__mail {
+    font-family: "TT Norms", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #24A3FF; }
+  .footer__mail::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    margin-bottom: 1px;
+    margin-right: 10px;
+    background-color: #B3B3BA; }
+  .footer__cooperate {
+    font-family: "TT Norms", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B3B3BA; }
+
+.team__HeaderWrapper {
+  max-width: 1440px;
+  padding: 3.47% 60px 0 60px;
+  margin: auto; }
+
+.team__Wrapper {
+  max-width: 1440px;
+  margin: auto; }
+
+.team__title {
+  margin: 80px 310px;
+  font-family: "TT Norms", sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #F0145A;
+  text-align: left; }
+
+.team__ItemWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 40px;
+  margin: 0 60px 60px 60px; }
+
+.team__Footer {
+  background-color: #F5F5FA; }
+
+.team__FooterWrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 60px; }
+
+.team__FooterWrapper .footer {
+  border: none; }
+
+.header__menuPItem:nth-child(3) {
+  color: #F0145A;
+  text-decoration: underline; }
