@@ -10,6 +10,10 @@
     align-items: flex-start;
   }
 
+  &__hamburger {
+    display: none;
+  }
+
   &__logoTitle {
     @include textLogo;
     color: $MainRegular;
@@ -88,3 +92,56 @@
     color: $Accent;
   }
 }
+
+
+
+@media (max-width: 375px) {
+  .header {
+    flex-direction: column-reverse;
+
+    &__logo {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__logo img{
+      max-width: 78px;
+      margin-top: 20px;
+    }
+
+    &__hamburger {
+      display: inline-block;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+    }
+
+    &__wrapperLanguage {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__language span {
+      margin-left: 0;
+    }
+
+    &__contact {
+      justify-content: flex-end;
+    }
+
+    &__soc, &__address {
+      display: none;
+    }
+
+    &__contact &__tel::before, &__soc::before, &__address::before {
+      content: none;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
+
