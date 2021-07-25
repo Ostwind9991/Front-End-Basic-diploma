@@ -10,6 +10,14 @@
     align-items: flex-start;
   }
 
+  &__hamburger {
+    display: none;
+  }
+
+  &__mobMenu {
+    display: none;
+  }
+
   &__logoTitle {
     @include textLogo;
     color: $MainRegular;
@@ -88,3 +96,114 @@
     color: $Accent;
   }
 }
+
+
+
+@media (max-width: 375px) {
+  .header {
+    flex-direction: column-reverse;
+
+    &__logo {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__mobMenu {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $White;
+      z-index: 999;
+    }
+
+    &__mobMenuLogo {
+      position: relative;
+      padding: 16px 0 14px 0;
+      text-align: center;
+    }
+
+    &__mobMenuLogo span {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      font-size: 36px;
+      color: $Negative;
+    }
+
+    &__mobMenuLogo img {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__menuPItemMob {
+      @include textH3;
+      color: $ActiveRegular;
+      display: block;
+      text-align: center;
+      margin-bottom: 1px;
+      padding: 15px 0;
+      background-color:$GreyBg;
+      font-weight: 700;
+    }
+
+    &__menuPItemMob:hover {
+      color: $Accent;
+    }
+
+    &__logoImg {
+      max-width: 78px;
+      margin-top: 20px;
+    }
+
+    &__hamburger {
+      display: inline-block;
+      flex-grow: 1;
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    &__logoTitle {
+      margin-top: 5px;
+      @include textMenuMobile;
+    }
+
+    &__logoSmall {
+      margin-top: 15px;
+      max-width: 21px;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+    }
+
+    &__wrapperLanguage {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__language span {
+      margin-left: 0;
+    }
+
+    &__contact {
+      justify-content: flex-end;
+    }
+
+    &__soc, &__address {
+      display: none;
+    }
+
+    &__contact &__tel::before, &__soc::before, &__address::before {
+      content: none;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
+

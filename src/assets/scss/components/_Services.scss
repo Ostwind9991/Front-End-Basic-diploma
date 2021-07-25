@@ -29,3 +29,19 @@
     row-gap: 58px;
   }
 }
+
+@media (max-width: 375px) {
+  .services {
+
+    &__title {
+      @include textHeroMOBILE;
+      margin-bottom: 20px;
+    }
+
+    &__wrapper {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      row-gap: 40px;
+    }
+  }
+}

@@ -9,8 +9,6 @@
 @import "./components/Footer";
 
 .contact {
-
-
   &__HeaderWrapper {
     max-width: 1440px;
     padding: 3.47% 60px 0 60px;
@@ -113,4 +111,37 @@
 .header__menuPItem:nth-child(5) {
   color: $Accent;
   text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+  .contact {
+    &__HeaderWrapper {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__WrapperForm {
+      flex-direction: column;
+      padding: 20px 0 40px 0;
+    }
+
+    &__Contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 20px 40px 20px;
+    }
+
+    &__email {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    &__Form {
+      width: 100%;
+    }
+
+    &__FooterWrapper {
+      padding: 0 20px 118px 20px;
+    }
+  }
 }

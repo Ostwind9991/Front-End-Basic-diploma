@@ -78,6 +78,50 @@
     margin: auto;
     padding: 0 60px;
   }
+}
 
+@media (max-width: 375px) {
+
+  .homepage {
+    &__BanerSectionWrapper {
+      background: url("../icons/PatternSplash.png") no-repeat center/cover;
+    }
+
+    &__HeaderWrapper {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__ExperienceServices {
+      background: url("../icons/Bg.png") no-repeat center/cover;
+      border-radius: 0 0 12px 12px;
+    }
+
+    &__ExperienceServicesWrapper {
+      padding: 40px 20px;
+    }
+    &__ExperienceServicesWrapper .services {
+      margin:45px 0 0 0;
+    }
+
+    &__ExpServBottom {
+      background: url("../icons/CardshadowMob.svg") no-repeat 100%/100%;
+    }
+
+    &__Team {
+      padding: 20px 20px 30px 20px;
+    }
+
+    &__Cases {
+      padding: 0 20px 30px 20px;
+    }
+
+    &__PublicationsWrapper {
+      padding: 20px;
+    }
+
+    &__FooterWrapper {
+      padding: 0 20px 118px 20px;
+    }
+  }
 }
 

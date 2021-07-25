@@ -8,7 +8,7 @@ const gulp = require('gulp'),
 gulp.task('sass', function(){
     return gulp.src("./src/assets/scss/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest('./dist/csspref'))
+        .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.stream());
 });
 
@@ -30,18 +30,6 @@ gulp.task('fileinclude', function() {
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('gulp-autoprefixer', function () {
-    return gulp.src('dist/csspref/*.css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-       .pipe(gulp.dest('dist/css'));
-});
-
-gulp.task('del', function(){
-    return del('dist/csspref', {force:true});
-});
 
 gulp.task('copy',function(){
     return gulp.src('./src/assets/icons/**/*.{svg,png,jpg}')
@@ -61,7 +49,7 @@ gulp.task("watch", function(done) {
     browserSync.init({
         server: {
             baseDir: "./dist",
-            index: "contact.html"
+            index: "index.html"
         }
     })
 
@@ -70,4 +58,4 @@ gulp.task("watch", function(done) {
     gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('copy', 'sass', 'gulp-autoprefixer', 'fileinclude', 'copyjs', 'copyfonts', 'del', 'watch'));
+gulp.task('default', gulp.series('copy', 'sass','fileinclude', 'copyjs', 'copyfonts', 'watch'));

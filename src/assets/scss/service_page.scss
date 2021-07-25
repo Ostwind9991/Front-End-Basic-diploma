@@ -62,3 +62,32 @@
 .header__menuPItem:nth-child(2) {
   text-decoration: underline;
 }
+
+@media (max-width: 375px) {
+  .service_page {
+
+    &__HeaderWrapper {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__ServicePageSplashWrapper {
+      padding: 20px;
+    }
+
+    &__ExpServBottom {
+      background: url("../icons/CardshadowMob.svg") no-repeat 100%/100%;
+    }
+
+    &__Cases {
+      padding: 20px 20px 30px 20px;
+    }
+
+    &__PublicationsWrapper {
+      padding: 20px;
+    }
+
+    &__FooterWrapper {
+      padding: 0 20px 118px 20px;
+    }
+  }
+}

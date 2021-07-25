@@ -14,6 +14,11 @@
     flex-direction: column;
     position: relative;
   }
+
+  &__dottitle {
+    display: none;
+  }
+
   &__dot:after {
     content:"";
     display: block;
@@ -41,6 +46,7 @@
   &__dot:hover, .active {
     @include GradientRedText;
   }
+
   &__dot:hover::after {
     background-color: $Accent;
   }
@@ -63,6 +69,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    overflow: hidden;
   }
 
   &__sliders h2 {
@@ -76,4 +83,90 @@
     max-width: 550px;
   }
 }
+
+@media (max-width: 375px) {
+
+
+  .slidExper  {
+    &__wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      overflow: hidden;
+    }
+
+    &__dots {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    &__dot{
+      content:"";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-color: $ActiveRegular;
+      border-radius: 100%;
+      padding: 0;
+      opacity: 0.2;
+      margin-right: 14px;
+    }
+
+    &__dot:nth-last-child {
+      margin-right: 0;
+    }
+
+    &__dot:hover, .active{
+      background: $ActiveRegular;
+      opacity: 1;
+    }
+
+    &__dot:after {
+      content:none;
+    }
+
+    &__dottitle {
+      display: block;
+      @include textH3Caps;
+      @include GradientRedText;
+      margin-bottom: 10px;
+    }
+
+    &__dotdesk {
+      display: none;
+    }
+
+    &__container {
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__sliders {
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all 0.25s ease-in-out;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &__sliders h2 {
+      @include textH2MOBILE;
+      margin-bottom: 15px;
+    }
+    &__sliders p {
+      @include textParagraph;
+    }
+  }
+
+}
+
 

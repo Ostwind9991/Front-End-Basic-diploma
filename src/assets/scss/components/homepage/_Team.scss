@@ -99,4 +99,35 @@
   }
 }
 
+@media (max-width: 375px) {
+  .slidTeam {
+    &__blogSlides {
+      flex-direction: column-reverse;
+    }
 
+    &__foto {
+      width: 60px;
+      height: 60px;
+      border-radius: 120px;
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+    }
+
+    &__wrapperDiscretion {
+      padding: 20px 0 27px 20px;
+    }
+
+    &__title {
+      @include textHeroMOBILE;
+      margin-bottom: 10px;
+    }
+
+    &__firstname {
+      margin-left: 90px;
+    }
+    &__work {
+      margin-left: 90px;
+    }
+  }
+}

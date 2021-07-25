@@ -7,7 +7,6 @@
 @import "./components/Footer";
 
 .blog {
-
   &__HeaderWrapper {
     max-width: 1440px;
     padding: 3.47% 60px 0 60px;
@@ -89,4 +88,30 @@
 .header__menuPItem:nth-child(4) {
   color: $Accent;
   text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+  .blog {
+    &__HeaderWrapper {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__PublicationsWrapper {
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    &__Publications {
+      padding: 20px 0 40px 0;
+      column-count: 1;
+    }
+
+    &__seeMore a{
+      margin-bottom: 20px;
+    }
+
+    &__FooterWrapper {
+      padding: 0 20px 118px 20px;
+    }
+  }
 }

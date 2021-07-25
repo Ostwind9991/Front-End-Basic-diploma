@@ -52,5 +52,25 @@
     border-radius: 12px;
     width: 250px;
   }
+}
 
+@media (max-width: 375px) {
+  .publications {
+
+    &__title {
+      @include textHeroMOBILE;
+      margin-bottom: 20px;
+    }
+
+    &__wrapper {
+      column-count: 1;
+    }
+
+    &__seeMore {
+      height:auto;
+      background: transparent;
+      position: relative;
+      padding: 20px 0;
+    }
+  }
 }

@@ -43,3 +43,12 @@
   }
 }
 
+@media (max-width: 375px) {
+  .banner {
+
+    &__title {
+      margin: 138px 0 210px 0;
+    }
+  }
+}
+

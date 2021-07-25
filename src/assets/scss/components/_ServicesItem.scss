@@ -18,3 +18,28 @@
   }
 }
 
+
+@media (max-width: 375px) {
+  .servicesItem {
+    & img {
+      max-width: 64px;
+    }
+    &__hedWrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    &__title {
+      display: inline-block;
+      margin-top: 0;
+      @include textH3MOBILE;
+      color: $ActiveRegular;
+      margin-left: 10px;
+    }
+
+    &__text {
+      margin-top: 10px;
+      @include textParagraphMin;
+    }
+  }
+}

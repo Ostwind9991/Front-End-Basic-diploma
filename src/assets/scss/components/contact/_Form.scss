@@ -1,8 +1,6 @@
 @import "../../common/mixins";
 @import "../../common/variables";
 
-
-
 .form {
 
   background-color:$GreyBg;
@@ -43,6 +41,20 @@
     box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
     width: 250px;
     text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .form {
+    border-radius: 0;
+
+    &__title {
+      @include textH2MOBILE;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
   }
 
 }
