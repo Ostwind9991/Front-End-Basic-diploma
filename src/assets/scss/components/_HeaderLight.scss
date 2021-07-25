@@ -104,13 +104,26 @@
       justify-content: space-between;
     }
 
-    &__logo img{
+    &__logoImg {
       max-width: 78px;
       margin-top: 20px;
     }
 
     &__hamburger {
       display: inline-block;
+      flex-grow: 1;
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    &__logoTitle {
+      margin-top: 5px;
+      @include textMenuMobile;
+    }
+
+    &__logoSmall {
+      margin-top: 15px;
+      max-width: 21px;
     }
 
     &__wrapper {

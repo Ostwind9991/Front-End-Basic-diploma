@@ -23,11 +23,14 @@
     border-radius: 12px;
     text-align: center;
   }
+  & span:nth-child(n+4) {
+    display: none;
+  }
 
   &__pointWrapper {
     text-align: center;
-    cursor: default;
   }
+
   &__pointWrapper span{
     display: inline-block;
     width: 16px;
@@ -46,5 +49,57 @@
   &__pointWrapper span:hover{
     opacity: 1;
   }
+}
 
+@media (max-width: 375px) {
+  .achievments {
+
+    &__itemWrapper {
+      margin-bottom: 30px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    &__item {
+      padding: 13px 0 ;
+    }
+
+    &__item img {
+      max-height: 31px;
+    }
+
+    &__item:nth-child(n+3) {
+      display: none;
+    }
+    & span:nth-child(n+4) {
+      display: inline-block;
+    }
+
+    &__pointWrapper {
+      text-align: center;
+      cursor: default;
+    }
+
+    &__pointWrapper span{
+      margin: 0 14px 0 0;
+    }
+
+    &__pointWrapper span:nth-child(2){
+      margin: 0 14px 0 0;
+    }
+
+    &__pointWrapper span:nth-last-child{
+      margin: 0;
+    }
+    &__pointWrapper span:nth-child(1){
+      opacity: 1;
+    }
+    &__pointWrapper span:hover{
+      opacity: 1;
+    }
+
+    &__pointWrapper span:active{
+      opacity: 1;
+    }
+  }
 }

@@ -22,7 +22,7 @@
   }
 
   &__item:nth-child(1) {
-    background-color: #1C4280;
+    background: #1C4280;
   }
   &__item:nth-child(2) {
     background-color: #143646;
@@ -58,3 +58,23 @@
     background-color: #000;
   }
 }
+
+@media (max-width: 375px) {
+  .clients {
+    & img {
+      max-width: 150px;
+    }
+    &__item {
+      flex: 0 0 187px;
+      height: 90px;
+      padding: 10px;
+    }
+    &__item:nth-child(4) {
+      order: 3;
+    }
+    &__item:nth-child(3) {
+      order: 5;
+    }
+  }
+}
+

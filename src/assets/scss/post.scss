@@ -7,7 +7,6 @@
 @import "./components/Footer";
 
 .post {
-
   &__HeaderWrapper {
     max-width: 1440px;
     padding: 3.47% 60px 0 60px;
@@ -91,6 +90,7 @@
 
   &__Epilogue {
     margin: 20px 20px 0 20px;
+    text-align: left;
   }
 
   &__Epilogue a {
@@ -117,10 +117,77 @@
     margin: auto;
     padding: 0 60px;
   }
-
 }
 
 .header__menuPItem:nth-child(4) {
   color: $Accent;
   text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+  .post {
+    &__HeaderWrapper {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__Wrapper {
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    &__Heading img {
+      width: 100%;
+    }
+
+    &__Heading h1 {
+      @include textH2MOBILE;
+      margin: 20px 20px 10px 20px;
+    }
+
+    &__Heading span {
+      margin: 0 0 20px 20px;
+    }
+
+    &__MainePost h2 {
+      @include textHeroMOBILE;
+      margin: 20px 20px 0 20px;
+    }
+
+    &__MainePost h3 {
+      @include textH3MOBILE;
+      margin: 40px 20px 20px 20px;
+    }
+
+    &__MainePost img {
+      margin: 20px 0;
+      max-width: 100%;
+    }
+
+    &__MainePost ul {
+      margin: 0 20px 20px 40px;
+    }
+
+    &__MainePost::before {
+      margin: 0 20px 20px 20px;
+      width: 90%;
+    }
+
+    &__MainePost::after {
+      margin: 40px 20px 20px 20px;
+      width: 90%;
+    }
+
+    &__Epilogue {
+      margin: 20px 20px 40px 20px;
+      text-align: center;
+    }
+
+    &__PublicationsWrapper {
+      padding: 20px;
+    }
+
+    &__FooterWrapper {
+      padding: 0 20px 118px 20px;
+    }
+  }
 }

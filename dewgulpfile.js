@@ -36,7 +36,7 @@ gulp.task('gulp-autoprefixer', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-    gulpfile.js     .pipe(gulp.dest('dist/css'));
+       .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('del', function(){

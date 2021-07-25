@@ -85,5 +85,52 @@
     @include textCooperate;
     color: $GreyText;
   }
+}
 
+@media (max-width: 375px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+
+    &__contact {
+      margin-bottom: 20px;
+    }
+
+    &__addressWrapper {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &__address {
+      font-weight: bold;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    &__map::before {
+      content: none;
+    }
+
+    &__contactsWrapper {
+      flex-direction: column;
+    }
+
+    &__tell {
+      margin: 20px  0;
+    }
+
+    &__tell::before {
+      content: none;
+    }
+
+    &__mail::before {
+      content: none;
+    }
+
+    &__cooperate {
+      margin: 0 20px;
+      text-align: center;
+    }
+  }
 }

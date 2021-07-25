@@ -49,3 +49,29 @@
     color: #000;
   }
 }
+
+@media (max-width: 375px) {
+  .publictation {
+    margin-bottom: 20px;
+
+    &__date {
+      margin-bottom: 0;
+    }
+
+    &__date::after {
+      content: none;
+    }
+
+    &__shortdisc {
+      display: none;
+    }
+  }
+
+  .publications__wrapper  .publictation:nth-child(n+4) {
+    display: none;
+  }
+
+  .blog__Publications .publictation:nth-child(n+7) {
+    display: none;
+  }
+  }

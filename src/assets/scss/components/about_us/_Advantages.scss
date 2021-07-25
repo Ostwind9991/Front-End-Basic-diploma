@@ -56,4 +56,42 @@
   }
 }
 
+@media (max-width: 375px) {
+  .advantages {
+    margin: 20px;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__introduction {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      @include textHeroMOBILE;
+      margin-bottom: 20px;
+    }
+
+    &__descriptions {
+      @include textParagraph;
+    }
+
+    &__advantagwrap {
+      padding-top: 15px;
+      border-top: 2px solid $GreySeparator;
+    }
+
+    &__item:nth-child(1), &__item:nth-child(2) {
+      padding-bottom: 20px;
+    }
+
+    &__item {
+      padding-left: 0;
+      border-left: none;
+    }
+  }
+}
+
 

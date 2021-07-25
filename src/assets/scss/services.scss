@@ -62,3 +62,32 @@
   text-decoration: underline;
 }
 
+@media (max-width: 375px) {
+  .services {
+    &__BanerSectionWrapper {
+      background: url("../icons/Bg.png") no-repeat center/cover;
+      border-radius: 0 0 12px 12px;
+    }
+
+    &__HeaderWrapper {
+      padding: 20px 20px 0 20px;
+    }
+
+    &__ServicesWrapper {
+      padding: 20px;
+    }
+
+    &__ExpServBottom {
+      background: url("../icons/CardshadowMob.svg") no-repeat 100%/100%;
+    }
+
+    &__Cases {
+      padding: 20px;
+    }
+
+    &__FooterWrapper {
+      padding: 0 20px 118px 20px;
+    }
+  }
+}
+

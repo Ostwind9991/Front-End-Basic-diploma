@@ -97,56 +97,30 @@
     }
 
     &__ExperienceServicesWrapper {
-      max-width: 1440px;
-      margin: auto;
-      padding: 80px 60px;
+      padding: 40px 20px;
     }
     &__ExperienceServicesWrapper .services {
-      margin-top: 80px;
+      margin:45px 0 0 0;
     }
 
     &__ExpServBottom {
-      position: relative;
-      width: 100%;
-      height: 20px;
-      background: url("../icons/Cardshadow.svg") no-repeat 100%/100%;
+      background: url("../icons/CardshadowMob.svg") no-repeat 100%/100%;
     }
 
     &__Team {
-      max-width: 1440px;
-      margin: auto;
-      padding: 40px 60px;
+      padding: 20px 20px 30px 20px;
     }
 
     &__Cases {
-      max-width: 1440px;
-      margin: auto;
-      padding: 0 60px 30px 60px;
-    }
-
-    &__Clients {
-      max-width: 1440px;
-      margin: auto;
-    }
-
-    &__Publications {
-      background-color: $GreyBg;
+      padding: 0 20px 30px 20px;
     }
 
     &__PublicationsWrapper {
-      max-width: 1440px;
-      margin: auto;
-      padding: 40px 60px 0 60px;
-    }
-
-    &__Footer {
-      background-color: $GreyBg;
+      padding: 20px;
     }
 
     &__FooterWrapper {
-      max-width: 1440px;
-      margin: auto;
-      padding: 0 60px;
+      padding: 0 20px 118px 20px;
     }
   }
 }

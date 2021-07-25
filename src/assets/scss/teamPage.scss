@@ -102,3 +102,53 @@
   text-decoration: underline;
 }
 
+@media (max-width: 375px) {
+  .teamPage {
+    &__HeaderWrapper {
+      padding: 20px 20px 0 20px;
+      }
+
+    &__TeamWrapper {
+      padding: 20px 20px 40px 20px;
+      flex-direction: column;
+    }
+
+    &__photo {
+      width: 100%;
+      margin-right:0;
+    }
+
+    &__photo img {
+      width: 100%;
+    }
+
+    &__heading h2 {
+      @include textHeroMOBILE;
+      margin: 20px 0 10px 0;
+    }
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      margin-bottom:20px ;
+    }
+
+    &__contact a {
+      margin-top: 10px;
+      margin-right: 0;
+    }
+
+    &__contact a::before {
+      content: none;
+    }
+
+    &__bio h4 {
+      margin: 20px 0 10px 0;
+    }
+
+    &__FooterWrapper {
+      padding: 0 20px 118px 20px;
+    }
+  }
+}
+

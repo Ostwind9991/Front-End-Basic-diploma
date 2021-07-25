@@ -26,7 +26,7 @@
 
   &__baton {
     display: inline-block;
-    margin: 40px 0 80px 0;
+    margin: 40px auto 80px auto;
     @include textButton;
     color: $White;
     width: 250px;
@@ -66,6 +66,46 @@
   &__text::marker {
     color: $Accent;
   }
+}
 
+@media (max-width: 375px) {
+  .servicepagesplash {
+    text-align: left;
 
+    &__title {
+      @include textHeroMOBILE;
+    }
+
+    &__description {
+      @include textParagraph;
+      margin: 0;
+    }
+
+    &__baton {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    &__services {
+      margin: 0;
+    }
+
+    &__services h4 {
+      @include textH3MOBILE;
+      color: $White;
+      margin: 20px 0 10px 0;
+    }
+
+    &__textWrapper {
+      columns: 1 auto;
+    }
+
+    &__text {
+      display: list-item;
+      @include textParagraph;
+      color: $White;
+      margin-bottom: 20px;
+    }
+  }
 }

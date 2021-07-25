@@ -12,6 +12,12 @@
   line-height: 19px;
   text-align: right;
 }
+@mixin textMenuMobile {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+}
 
 @mixin textHero {
   font-family: "TT Norms", sans-serif;
@@ -34,12 +40,27 @@
   line-height: 38px;
 }
 
+@mixin textH2MOBILE {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+
 @mixin textH3 {
   font-family: "TT Norms", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
 }
+
+@mixin textH3MOBILE {
+  font-family: "TT Norms", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 @mixin textH4 {
   font-family: "TT Norms", sans-serif;
   font-weight: 400;
@@ -126,6 +147,16 @@
   line-height: 113px;
   text-align: center;
   letter-spacing: 63px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+}
+@mixin  textTeamTitleMobile {
+  font-family: "TT Norms", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 20px;
   text-transform: uppercase;
   opacity: 0.8;
   text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);

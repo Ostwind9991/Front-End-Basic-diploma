@@ -19,3 +19,22 @@
     @include GradientRedText;
   }
 }
+
+@media (max-width: 375px) {
+  .moredescription {
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__text {
+      @include textParagraph;
+      margin-right: 0;
+    }
+
+    &__title {
+      @include textHeroMOBILE;
+      margin-top: 20px;
+    }
+  }
+}
