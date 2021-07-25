@@ -14,6 +14,10 @@
     display: none;
   }
 
+  &__mobMenu {
+    display: none;
+  }
+
   &__logoTitle {
     @include textLogo;
     color: $MainRegular;
