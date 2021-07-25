@@ -1,9 +1,32 @@
 <section class="header">
     <div class="header__logo">
-        <a  href="./index.html"><img class="header__logoImg"  alt="Logo" src="@@srcLogo"></a>
+        <a href="./index.html"><img class="header__logoImg" alt="Logo" src="@@srcLogo"></a>
         <span class="header__logoTitle">@@headerlogoTitle</span>
         <img class="header__logoSmall" src="@@srcLogoSlash">
-        <a class="header__hamburger" href="#"><img  src="./icons/header/HamburgerLignt.svg"></a>
+        <a href="#" class="header__hamburger"><img onclick="return toggleMeTu('content1', this)" aria-expanded="false"  src="./icons/header/HamburgerLignt.svg"></a>
+        <div id="content1" class="header__mobMenu">
+            <div class="header__mobMenuLogo">
+                <a href="./index.html"><img  src="./icons/header/SymbolSlash.svg"></a>
+                <span onclick="return toggleMe('content1', this)" aria-expanded="false">&#215;</span>
+            </div>
+            <div class="header__mobMenuWrapper">
+                    <a class="header__menuPItemMob" href="./about_us.html">
+                        <p>о нас</p>
+                    </a>
+                    <a class="header__menuPItemMob" href="./services.html">
+                        <p>послуги</p>
+                    </a>
+                    <a class="header__menuPItemMob" href="./team.html">
+                        <p>команда</p>
+                    </a>
+                    <a class="header__menuPItemMob" href="./blog.html">
+                        <p>публікації</p>
+                    </a>
+                    <a class="header__menuPItemMob" href="./contact.html">
+                        <p>контакти</p>
+                    </a>
+            </div>
+        </div>
     </div>
     <div class="header__wrapper">
         <div class="header__wrapperLanguage">
@@ -38,4 +61,5 @@
             </ol>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
 </section>
