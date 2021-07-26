@@ -1048,8 +1048,8 @@ button {
     max-width: 150px; }
   .clients__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 187px;
-    flex: 0 0 187px;
+    -ms-flex: 0 0 186px;
+    flex: 0 0 186px;
     height: 90px;
     padding: 10px; }
   .clients__item:nth-child(4) {
